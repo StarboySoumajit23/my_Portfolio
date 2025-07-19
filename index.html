@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My_Portfolio</title>
     <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
-    
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
      <script src="https://cdn.tailwindcss.com"></script>
      <script src="./tailwind.config.js"></script>
 <script>
@@ -26,14 +29,16 @@
     <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden">
         <img src="./images/header-bg-color.png" alt="" class="w-full">
     </div>
-    <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ">
+    <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 animate__backInRight ">
         <img src="./images/mylogo.png" alt="Logo" class="w-28 cursor-pointer mr-14 dark:hidden">
         <img src="./images/mylogodark.png" alt="Logo" class="w-28 cursor-pointer mr-14 hidden dark:block">
         <ul class="hidden md:flex item-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo dark:border dark:border-white/50 
         dark:bg-transparent">
             <li><a href="#top">Home</a></li>
             <li><a href="#about">About me</a></li>
+            <li><a href="#skills">My Skills</a></li>
             <li><a href="#work">My Work</a></li>
+             
             <li><a href="#contact">Contact me</a></li>
 
         </ul>
@@ -71,6 +76,7 @@
                 </div>
             <li><a href="#top" onclick="closeMenu()">Home</a></li>
             <li><a href="#about" onclick="closeMenu()">About me</a></li>
+            <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
             <li><a href="#work" onclick="closeMenu()">My Work</a></li>
             <li><a href="#contact" onclick="closeMenu()">Contact me</a></li>
 
@@ -80,7 +86,7 @@
     <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
         <img src="./images/profile-img-removebg-preview.png" alt="" class="rounded-full w-32">
         <h3 class="flex items-end gap-2 text-xl md: text-2xl mb-3">Hi! I am Soumajit Bhattacharjee <img
-                src="./images/hand-icon.png" alt=""></h3>
+                src="./images/namasteicon-removebg-preview.png" alt=""></h3>
         <h1 class="text-3xl sm:text-6xl lg:text-[66px]">Full-Stack Web Developer from,NIT Arunachal Pradesh.</h1>
         <p class="max-w-2xl mx-auto">I am full stack web developer from NIT Arunachal Pradesh currently persuing B.Tech
             in Electrical Engineering. Hope I could be of some help to you.</p>
@@ -88,7 +94,7 @@
             <a href="#contact"
                 class="px-10 py-3 border rounded-full bg-gradient-to-tr from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2 dark:border-transparent">Contact
                 Me <img src="./images/right-arrow-white.png" alt="" class="w-4"></a>
-            <a href="./images/Soumajit_Resume.pdf" download
+            <a href="./images/Soumajit_Resume(IT).pdf" download
                 class="px-10 py-3 border rounded-full border-gray-500 bg-white flex items-center gap-2 bg-white dark:text-black">My Resume<img
                     src="./images/download-icon.png" alt="" class="w-4"></a>
         </div>
@@ -133,11 +139,19 @@
                         <img src="./images/project-icon-dark.png" alt="" class="w-7 mt-3 hidden dark:block">
                         <h3 class="my-4 font-semibold text-gray-700 dark:text-white" >Projects</h3>
                         <p class="text-gray-600 text-sm break-words max-w-[12rem] dark:text-white/80">Build projects like E-Commerce
-                            website,Spotify-Clone,Travel-Tracker,Todo List</p>
+                            website,Cine-dine App,Travel-Tracker,Todo List</p>
                     </li>
                 </ul>
-                <h4 class="my-6 text-gray-700 dark:text-white/80">Tools I use</h4>
-                <ul class="flex items-center gap-3 sm:gap-5">
+                
+            </div>
+        </div>
+    </div>
+    <!-- my skills -->
+     <div id="skills" class="w-full px-[12%] py-10 animate__heartBeat">
+        <h4 class="text-center mb-2 text-lg">Tools I Use</h4>
+        <h2 class="text-center text-5xl">My Tech Stack</h2>
+        <div class=" flex lg:flex-col justify-between items-center mt-10 ">
+             <ul class="flex flex-wrap justify-center items-center gap-3 sm:gap-5">
                     <li
                         class="flex items-center justify-center w-12  sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
                         <img src="./images/vscode.png" alt="" class="w-5 sm:w-7">
@@ -158,10 +172,40 @@
                         class="flex items-center justify-center w-12  sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
                         <img src="./images/git.png" alt="" class="w-5 sm:w-7">
                     </li>
+                    <li
+                        class="flex items-center justify-center w-12  sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="./images/React-icon.svg.png" alt="" class="w-5 sm:w-7">
+                    </li>
+                    <li
+                        class="flex items-center justify-center w-12  sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="./images/javaa-removebg-preview.png" alt="" class="w-5 sm:w-7">
+                    </li>
+                    <li
+                        class="flex items-center justify-center w-12  sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="./images/javascript-removebg-preview.png" alt="" class="w-5 sm:w-7">
+                    </li>
+                    <li
+                        class="flex items-center justify-center w-12  sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="./images/postresql-removebg-preview.png" alt="" class="w-5 sm:w-7">
+                    </li>
+                    <li
+                        class="flex items-center justify-center w-12  sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="./images/node-removebg-preview.png" alt="" class="w-5 sm:w-7">
+                    </li>
+                    <li
+                        class="flex items-center justify-center w-12  sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="./images/download-removebg-preview.png" alt="" class="w-5 sm:w-7 dark:hidden">
+                        <img src="./images/download__1_-removebg-preview.png" alt="" class="w-5 sm:w-7 hidden dark:block">
+
+                    </li>
+
                 </ul>
-            </div>
+
+
         </div>
-    </div>
+               
+
+     </div>
 
     <!-- my work -->
     <div id="work" class="w-full px-[12%] py-10 scroll-mt-20">
@@ -169,16 +213,16 @@
         <h2 class="text-center text-5xl">My Latest works</h2>
         <p class="text-center max-w-2xl mx-auto mt-5 mb-12">Welcome to my web development portfolio! Explore a
             collection of projects showcasing my expertise in full-stack web development.</p>
-        <div class="grid grid-cols-4 my-10 gap-5 dark:text-black">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 my-10 gap-5 dark:text-black">
             <div
-                class="group aspect-square bg-[url('./images/ECommerce.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer">
+                class="group aspect-square bg-[url('./images/RealEstate.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer">
                 <div
                     class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
                     <div>
-                        <h2 class="font-semibold"> QuickCart</h2>
-                        <p class="text-sm text-gray-700"> An ecommerce website</p>
+                        <h2 class="font-semibold">Estate</h2>
+                        <p class="text-sm text-gray-700"> An real estatete website</p>
                     </div>
-                    <a href="https://quick-cart-ten-nu.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    <a href="http://real-estate-sable-rho.vercel.app" target="_blank" rel="noopener noreferrer">
                     <div
                         class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
 
@@ -190,14 +234,14 @@
 
             </div>
             <div
-                class="group aspect-square bg-[url('./images/Todo.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer">
+                class="group aspect-square bg-[url('./images/CineDine.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer">
                 <div
                     class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
                     <div>
-                        <h2 class="font-semibold"> Todo List</h2>
-                        <p class="text-sm text-gray-700">Set your targets here</p>
+                        <h2 class="font-semibold">Cine-dine app</h2>
+                        <p class="text-sm text-gray-700">Search your movies here</p>
                     </div>
-                    <a href="https://github.com/StarboySoumajit23/todo_list" target="_blank" rel="noopener noreferrer">
+                    <a href="https://cine-dine-xi.vercel.app/" target="_blank" rel="noopener noreferrer">
                     <div
                         class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
 
@@ -228,7 +272,27 @@
 
             </div>
             <div
-                class=" group aspect-square bg-[url('./images/SpotifyProject.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer">
+                class=" group aspect-square bg-[url('./images/Todo.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer">
+                <div
+                    class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+                    <div>
+                        <h2 class="font-semibold">To do App</h2>
+                        <p class="text-sm text-gray-700">Set your targets here</p>
+                    </div>
+                    <a href="https://github.com/StarboySoumajit23/todo_list" target="_blank" rel="noopener noreferrer">
+                    <div
+                        class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+
+                        <img src="./images/send-icon.png" alt="" class="w-5">
+                        
+                    </div>
+                    </a>
+                </div>
+
+
+            </div>
+             <div
+                class=" hidden group aspect-square bg-[url('./images/SpotifyProject.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer">
                 <div
                     class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
                     <div>
@@ -247,10 +311,31 @@
 
 
             </div>
+            <div
+                class=" hidden group aspect-square bg-[url('./images/ECommerce.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer">
+                <div
+                    class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+                    <div>
+                        <h2 class="font-semibold"> QuickCart</h2>
+                        <p class="text-sm text-gray-700"> An ecommerce website</p>
+                    </div>
+                    <a href="https://quick-cart-ten-nu.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    <div
+                        class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+
+                        <img src="./images/send-icon.png" alt="" class="w-5">
+                    </div>
+                    </a>
+                </div>
+
+
+            </div>
+            
 
         </div>
-        <a href="#"
-  class="block w-max mx-auto mt-10 text-sm text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 hover:bg-[#fcf4ff] transition duration-500 dark:text-white dark:border-white dark:hover:bg-[#2a004a]">
+
+        <a href="#work" id="showMore"
+  class="  block w-max mx-auto mt-10 text-sm text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 hover:bg-[#fcf4ff] transition duration-500 dark:text-white dark:border-white dark:hover:bg-[#2a004a]">
   Show more 
   <img src="./images/right-arrow-bold.png" alt="" class="inline w-4 ml-2 dark:hidden">
   <img src="./images/right-arrow-bold-dark.png" alt="" class=" w-4 ml-2  hidden dark:block">

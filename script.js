@@ -1,4 +1,5 @@
-const sideMenu=document.querySelector('#sideMenu');
+
+    const sideMenu=document.querySelector('#sideMenu');
 const navbar = document.querySelector("nav");
 const navLinks = document.querySelector("nav ul");
 
@@ -19,10 +20,12 @@ window.addEventListener('scroll',()=>{
         navLinks.classList.add('bg-white','shadow-sm','bg-opacity-50','dark:bg-transparent','dark:border',' dark:border-white/50');
     }
 })
-// light mode
+document.getElementById('showMore').addEventListener('click', function() {
+  const hiddenProjects = document.querySelectorAll('#work .hidden');
+  hiddenProjects.forEach(project => project.classList.remove('hidden'));
+  this.style.display = 'none'; // Hide button after showing all
+});
 
-
-// Set theme on page load
 if (
   localStorage.theme === "dark" ||
   (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
